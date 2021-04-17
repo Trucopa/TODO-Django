@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class='card'>
+    <div class='card-header'>
+        <h2>{{task.name}}</h2>
+    </div>
+    <div class='card-body'>
+        <p class='card-text'>{{task.description}}</p>
+        <a href="{% url 'tasks:list' %}"><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="" data-target="">RETURN</button></a>
+    </div>
+</div>
+
+{% endblock content %}
+
+
